@@ -9,4 +9,8 @@
 9. The code will return an error at line 11 because it is trying to access the variable ```i``` which is out of scope. Since ```i``` is of type ```let``` and is declared within a for-loop, its scope is only within that for-loop.
 10. At line 12 the code will print ```3```, which is the length of the array stored in the variable ```prices```. Since the variable ```length``` is of type const, it has a function-scope.
 11. The code will return ```[50,100,150]```. Since there are no references to variables out of the function-scope, the code does not return any errors.
-12. 
+12. a. ```student.name```
+    b. ```student['Grad Year']```
+    c. ```student.greeting()```
+    d. ```student['Favorite Teacher'].name```
+    e. ```student.courseLoad[0]```
