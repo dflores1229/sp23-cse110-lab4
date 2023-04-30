@@ -22,4 +22,12 @@
     f. In the expression ```false + null```, both ```false``` and ```null``` are mapped to their integer representations. Therefore the output is ```0```.
     g. In the expression ```'3' + undefined```, the value of ```undefined``` is mapped to its string representation. Therefore the output is ```3undefined```.
     h. In the expression ```'3' - undefined```, both ```'3'``` and ```undefined``` are mapped to their integer representations. Since the mapping of ```undefined``` is ```NaN```, the ouput is ```NaN```.
-14. a.
+14. a. In the expression ```'2'>1```, the value of ```'2'``` is mapped to its integer representation. Therefore the output is ```true```.
+    b. In the expression ```'2'<'12'```, the strings are compared character by character. Therefore it compares ```'2'<'1'``` and outputs false.
+    c. In the expression ```2 == '2'```, the value of ```'2'``` is mapped to its integer representation. Therefore, the output is ```true```.
+    d. In the expression ```2 === '2'```, the strict equality operator checks if the two values are of the same type. Therefore, the output is ```false```.
+    e. In the expression ```true == 2```, the value of ```true``` is mapped to its integer representation ```1```. Therefore, the output is ```false```.
+    f. In the expression ```true === Boolean(2)```, the value of ```Boolean(2)``` is mapped to its boolean representation ```true```. Therefore, the output is ```true```.
+15. The ```==``` operator checks for equality between the value on the left hand side and right hand side. If the operands are of different types then they are mapped to their integer representations. On the other hand, the ```===``` operator does not do type conversion. Instead, it only checks if the operands are of the same type.
+17. At line 13, two parameters are been passed into the function ```modifyArray(array,callback)```. ```array``` stores the value ```[1,2,3]``` and variable ```callback``` stores the function ```doSomething```. Inside of ```modifyArray```, first we create an empty array ```newArr```. Then the for-loop iterates 3 times (the length of ```array```) and makes a call to the function stored in ```callback``` which is ```doSomething``` with an input of the i-th value of ```array```. Inside of ```doSomething```, the passed in parameter is doubled and is returned. Therefore back on line 4, the value returned from ```doSomething``` is pushed into the array ```newArr```. Finally, ```modifyArray``` returns ```newArr``` with the value ```[2,4,6]```.
+18. 
