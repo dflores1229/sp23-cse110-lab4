@@ -14,3 +14,12 @@
     c. ```student.greeting()```
     d. ```student['Favorite Teacher'].name```
     e. ```student.courseLoad[0]```
+13. a. In the expression ``` '3' + 2 ```, the integer ```2``` is mapped to its string representation. Therefore the output is ```'35'```
+    b. In the expression ```'3'-2```, the string ```'3'``` is mapped to its integer representation. Therefore the output is ```1```.
+    c. In the expression ```3 + null```, the value ```null``` is mapped to its integer representation ```0```. Therefore the output is ```3```.
+    d. In the expression ```'3'+ null```, the value of ```null``` is mapped to its string representation. Therefore the output is ```'3null'```.
+    e. In the expression ```true + 3```, the value of ```true``` is mapped to its integer representation. Therefore the output is ```4```.
+    f. In the expression ```false + null```, both ```false``` and ```null``` are mapped to their integer representations. Therefore the output is ```0```.
+    g. In the expression ```'3' + undefined```, the value of ```undefined``` is mapped to its string representation. Therefore the output is ```3undefined```.
+    h. In the expression ```'3' - undefined```, both ```'3'``` and ```undefined``` are mapped to their integer representations. Since the mapping of ```undefined``` is ```NaN```, the ouput is ```NaN```.
+14. a.
