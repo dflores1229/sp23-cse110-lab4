@@ -1,0 +1,2 @@
+1. By using the debugging tool in the Chrome DevTools, we were able to figure out that both variables ```num1```and ```num2```are of type string. Therefore instead of summing the integer values of these variables, the string values of these variables are being concatenated.
+2. In order to fix this bug, I would parse both variables into their integer representation using parseInt() function before adding them together. (see fix.png)
